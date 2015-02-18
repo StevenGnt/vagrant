@@ -28,6 +28,6 @@
 [submodule "puppet/modules/nodejs"]
 	path = puppet/modules/nodejs
 	url = https://github.com/willdurand/puppet-nodejs.git
-[submodule "modules/wget"]
-	path = modules/wget
+[submodule "puppet/modules/wget"]
+	path = puppet/modules/wget
 	url = git://github.com/maestrodev/puppet-wget.git
