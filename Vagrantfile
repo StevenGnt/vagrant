@@ -20,6 +20,8 @@ Vagrant.configure("2") do |config|
         puppet.manifest_file = "init.pp"
 
         puppet.options = [
+            # '--debug',
+            # '--verbose',
             '--hiera_config /vagrant/puppet/hiera/hiera.yaml',
             '--parser=future'
         ]

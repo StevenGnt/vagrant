@@ -1,4 +1,4 @@
-class steven::base_config::wrap_apt {
+class steven::default::wrap_apt {
     # apt
     class { 'apt':
         always_apt_update => true,

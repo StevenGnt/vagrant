@@ -1,0 +1,3 @@
+# Useful aliases
+alias ll="ls -alF --color"
+alias l="ll"

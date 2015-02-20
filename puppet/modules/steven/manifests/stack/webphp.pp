@@ -1,5 +1,5 @@
 class steven::stack::webphp {
-    notice '---> Installing web PHP stack : Apache, PHP-FPM, MySQL and Composer.'
+    notice '---> Web HP stack will be installed: Apache, PHP-FPM, MySQL and Composer.'
 
     include steven::wrapper::wrap_apache
     include steven::wrapper::wrap_fpm

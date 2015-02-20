@@ -1,3 +1,4 @@
 ---
 common_classes:
-    - steven::base_config::wrap_apt
+    - steven::default::wrap_apt
+    - steven::default::wrap_user

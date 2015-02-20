@@ -1,3 +1,5 @@
 class steven::wrapper::wrap_nodejs {
-    # @todo
+    class { 'nodejs': 
+        version => 'stable'
+    }
 }
