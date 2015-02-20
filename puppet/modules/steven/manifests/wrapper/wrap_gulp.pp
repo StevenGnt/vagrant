@@ -1,3 +1,6 @@
 class steven::wrapper::wrap_gulp {
-    # @todo
+    package { 'gulp':
+      provider => 'npm',
+      require  => Class['nodejs']
+    }
 }

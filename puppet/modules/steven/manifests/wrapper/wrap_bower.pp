@@ -1,3 +1,6 @@
 class steven::wrapper::wrap_bower {
-    # @todo
+    package { 'bower':
+      provider => 'npm',
+      require  => Class['nodejs']
+    }
 }
