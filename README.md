@@ -11,7 +11,7 @@ The machine named "dev" contains the following :
 - Nodejs
 - Bower
 - Gulp
-- MySql
+- MySQL
 
 ## TODO
 Puppet provisionning for "dev" and everything it is supposed to contain.
