@@ -1,3 +1,4 @@
 ---
-dev_classes: 
-    - steven::packages::wrap_apache
+dev_classes:
+    - steven::stack::js
+    - steven::stack::webphp
