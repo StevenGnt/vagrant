@@ -1,2 +1,4 @@
 .vagrant
 boxes/*.box
+www
+!www/README.md
