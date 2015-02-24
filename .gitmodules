@@ -34,3 +34,6 @@
 [submodule "puppet/modules/concat"]
 	path = puppet/modules/concat
 	url = https://github.com/puppetlabs/puppetlabs-concat.git
+[submodule "puppet/modules/puppi"]
+	path = puppet/modules/puppi
+	url = git@github.com:example42/puppi.git

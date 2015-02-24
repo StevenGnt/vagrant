@@ -1,5 +1,5 @@
 class steven::wrapper::wrap_mysql {
-    $password = '4a42cdce68db8d8c!a1af48b39a12'
+    $password = '4a42cdce68db8d8a1af48b39a12'
 
     # MySQL installation
     class { 'mysql':
