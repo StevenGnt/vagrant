@@ -1,4 +1,4 @@
 ---
 dev_classes:
-    - steven::stack::js
-    # - steven::stack::webphp
+    # - steven::stack::js
+    - steven::stack::webphp

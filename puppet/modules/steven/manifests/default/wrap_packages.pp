@@ -8,6 +8,6 @@ class steven::default::wrap_packages {
         'tree',
         'unzip',
         'locales-all',
-        'telnet',
+        'telnet'
     ])
 }
