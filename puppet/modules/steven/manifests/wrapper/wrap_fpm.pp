@@ -1,7 +1,7 @@
 class steven::wrapper::wrap_fpm {
     ensure_packages(['php5']);
     
-    # Inlude modules
+    # Include modules
     include php
     include php::fpm
     include php::cli
