@@ -14,4 +14,16 @@ The machine named "dev" contains the following :
 - MySQL
 
 ## TODO
-Puppet provisionning for "dev" and everything it is supposed to contain.
+### System
+
+- Clock setup (currently out of sync)
+
+### WebPHP stack
+
+- Fix PHP FPM / Cli configuration
+- Fix MySQL configuration
+- Fix Composer installation
+- Enable PHP-FPM errors logging
+
+### JS stack
+- Fill the JS stack
