@@ -31,7 +31,7 @@ Vagrant.configure("2") do |config|
             dev.vm.hostname = "dev.steven-gnt.com"
             dev.vm.network :private_network, ip: "192.168.144.100"
             dev.vm.provider :virtualbox do |v|
-                v.customize ["modifyvm", :id, "--name", "Steven Gnt / Dev"]
+                v.customize ["modifyvm", :id, "--name", "StevenGnt - Dev"]
             end
 
             puppet.facter = {

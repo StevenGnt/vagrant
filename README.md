@@ -5,6 +5,8 @@
 Base Vagrant configuration to quickly set a dev environnement.
 The "boxes" directory is empty, you can put your own boxes in it and call them in the Vagrantfile.
 
+**NB: The first provision on the VM currently fails (vagrant up [?]). However, failures are solved by provisioning the machine afterwards.**
+
 ## "dev" machine
 The machine named "dev" is provisionned with the following stacks :
 - WebPHP
@@ -13,7 +15,6 @@ The machine named "dev" is provisionned with the following stacks :
 ## Stacks
 
 ### WebPHP
-**NB: This stack currently fails on the VM's first provision (vagrant up x, see TODO section). However, failures are solved by provisioning the machine afterwards.**
 Contains everything to run a web server with a PHP engine (and more).
 The following are installed :
 - Apache server
@@ -30,10 +31,12 @@ Contains everything to run JS projects :
 
 ## TODO
 
+### Common
+- Fix first provision failure (seems to search for packages in the wrong place)
+
 ### WebPHP stack
-- First provision on the VM fails (seems to search for package in the wrong place), those next work
 - Enable PHP-FPM errors logging
 - Fix MySQL root login
 
 ### JS stack
-- Fill the JS stack
+- NodeJS, NPM and various NPM modules seem to be missing in the PATH

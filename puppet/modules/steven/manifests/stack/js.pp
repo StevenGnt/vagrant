@@ -1,5 +1,8 @@
 class steven::stack::js {
-    notice '---> JS stack will be installed: NodeJS, Gulp and Bower.'
+    notice '---> JS stack will be installed :'
+    notice '       * NodeJS'
+    notice '       * Gulp'
+    notice '       * Bower'
 
     include steven::wrapper::wrap_nodejs
     include steven::wrapper::wrap_gulp

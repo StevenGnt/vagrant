@@ -1,6 +1,4 @@
 class steven::source::php_55 {
-# class steven::source::php_55 inherits raccourci::baseconfig::sources {
-
     apt::source { 'dotdeb':
         location => "http://packages.dotdeb.org",
         release => "wheezy-php55",

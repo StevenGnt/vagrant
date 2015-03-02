@@ -1,5 +1,5 @@
 class steven::stack::webphp {
-    notice '---> WebPHP stack will be installed: '
+    notice '---> WebPHP stack will be installed :'
     notice '       * Apache'
     notice '       * PHP-FPM'
     notice '       * MySQL'
