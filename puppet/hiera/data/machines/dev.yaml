@@ -2,3 +2,6 @@
 dev_classes:
     # - steven::stack::js
     - steven::stack::webphp
+
+dev_sources:
+    - steven::sources:: php_55

@@ -3,7 +3,7 @@ class steven::wrapper::wrap_mysql {
 
     # MySQL installation
     class { 'mysql':
-        root_password => $password,
+        root_password => "$password"
     }
 
     # root's "GRANT" access
@@ -11,7 +11,7 @@ class steven::wrapper::wrap_mysql {
         mysql_privileges     => 'ALL',
         mysql_db             => '*',
         mysql_user           => 'root',
-        mysql_password       => $password,
+        mysql_password       => "$password",
         mysql_host           => 'localhost',
         mysql_create_db      => false
     }
@@ -20,7 +20,7 @@ class steven::wrapper::wrap_mysql {
         mysql_privileges     => 'ALL',
         mysql_db             => '*',
         mysql_user           => 'root',
-        mysql_password       => $password,
+        mysql_password       => "$password",
         mysql_host           => '%',
         mysql_create_db      => false
     }

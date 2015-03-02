@@ -1,5 +1,5 @@
 class steven::default::wrap_user {
-
+    # Install root bashrc and bash_aliases
     file {
         '/root/.bashrc':
             owner => 'root',
