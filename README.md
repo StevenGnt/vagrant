@@ -13,7 +13,7 @@ The machine named "dev" is provisionned with the following stacks :
 ## Stacks
 
 ### WebPHP
-** NB: This stack currently fails on the VM's first provision (vagrant up x, see TODO section). However, failures are solved by provisioning the machine afterwards. **
+**NB: This stack currently fails on the VM's first provision (vagrant up x, see TODO section). However, failures are solved by provisioning the machine afterwards.**
 Contains everything to run a web server with a PHP engine (and more).
 The following are installed :
 - Apache server
