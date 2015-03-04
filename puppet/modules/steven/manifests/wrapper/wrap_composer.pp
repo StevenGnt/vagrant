@@ -1,5 +1,4 @@
 class steven::wrapper::wrap_composer {
-
     # Composer installation
     class { 'composer':
         command_name => 'composer',

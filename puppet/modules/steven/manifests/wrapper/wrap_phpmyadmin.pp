@@ -9,6 +9,7 @@ class steven::wrapper::wrap_phpmyadmin{
         ]
     }
 
+    # PhpMyAdmin vhost
     file { "/etc/apache2/sites-enabled/50-phpmyadmin.conf":
         ensure => link,
         target => '/etc/phpmyadmin/apache.conf',
