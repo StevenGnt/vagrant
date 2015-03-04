@@ -1,6 +1,6 @@
 class steven::stack::js {
     notice '---> JS stack will be installed :'
-    notice '       * NodeJS'
+    notice '       * NodeJS / NPM'
     notice '       * Gulp'
     notice '       * Bower'
     notice '       * Yeoman'
