@@ -2,5 +2,8 @@
 common_classes:
     - steven::default::wrap_packages
     - steven::default::wrap_apt
-    - steven::default::wrap_user
     - steven::default::wrap_default
+    - steven::user::groups
+    - steven::user::root
+    - steven::user::admin
+    - steven::user::sudoers

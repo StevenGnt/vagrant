@@ -37,3 +37,6 @@
 [submodule "puppet/modules/ntp"]
 	path = puppet/modules/ntp
 	url = https://github.com/puppetlabs/puppetlabs-ntp.git
+[submodule "puppet/modules/sudo"]
+	path = puppet/modules/sudo
+	url = https://github.com/puppetlabs/puppetlabs-sudo.git
