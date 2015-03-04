@@ -34,7 +34,6 @@ Contains tools to run JS projects :
 ### Common
 - Fix first provision failure (seems to search for packages in the wrong place)
 - Stacks should provide their own sources (should not be done within hiera config, see PHP 5.5 sources)
-- Could be a good idea to have a non-root user (NPM packages oftenly don't like to be run as a sudoer)
 
 ### WebPHP stack
 - Enable PHP-FPM errors logging
