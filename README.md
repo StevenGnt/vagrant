@@ -28,15 +28,14 @@ Contains everything to run JS projects :
 - Nodejs
 - Bower
 - Gulp
+- Yeoman
 
 ## TODO
 
 ### Common
 - Fix first provision failure (seems to search for packages in the wrong place)
+- Stacks should provide their own sources (should not be done within hiera config, see PHP 5.5 sources)
 
 ### WebPHP stack
 - Enable PHP-FPM errors logging
 - Fix MySQL root login
-
-### JS stack
-- NodeJS, NPM and various NPM modules seem to be missing in the PATH

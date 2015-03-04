@@ -1,6 +1,8 @@
 class steven::wrapper::wrap_bower {
-    package { 'bower':
-      provider => 'npm',
-      require  => Class['nodejs']
+    exec { "bower":
+        unless  => "which bower",
+        command => "sudo npm install -g bower",
+        require => Package["nodejs"],
+        timeout => 0;
     }
 }

@@ -1,6 +1,8 @@
 class steven::wrapper::wrap_gulp {
-    package { 'gulp':
-      provider => 'npm',
-      require  => Class['nodejs']
+    exec { "gulp":
+        unless  => "which gulp",
+        command => "sudo npm install -g gulp",
+        require => Package["nodejs"],
+        timeout => 0;
     }
 }
