@@ -5,11 +5,11 @@ Vagrant.configure("2") do |config|
     # config.vm.box_url = "http://puppet-vagrant-boxes.puppetlabs.com/debian-73-x64-virtualbox-puppet.box"
 
     # Synced folder
-    config.vm.synced_folder "./www", "/home/admin/www", owner: "root", group: "www-data", mount_options: ["dmode=775","fmode=664"]
+    config.vm.synced_folder "./www", "/var/nfs/www", owner: "root", group: "www-data", mount_options: ["dmode=775","fmode=664"]
 
     # Configure the machine settings
     config.vm.provider :virtualbox do |v|
-        v.customize ["modifyvm", :id, "--memory", 1024]
+        v.customize ["modifyvm", :id, "--memory", 2048]
         v.customize ["modifyvm", :id, "--cpus", 1]
     end
 
