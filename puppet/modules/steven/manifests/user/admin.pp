@@ -1,13 +1,6 @@
 class steven::user::admin {
-    $admin_home = '/home/admin'
 
-    # Create "admin" user home
-    file { "admin_home_dir":
-        ensure => 'directory',
-        path => "${admin_home}",
-        owner => 'admin',
-        group => 'admin'
-    }
+    $admin_home = '/home/admin'
 
     # Create "admin" user
     user { 'admin':
@@ -18,7 +11,16 @@ class steven::user::admin {
         shell => '/bin/bash',
         home => "${admin_home}",
         password => '',
-        require => [Group['admin'], Group['www-data'], File['admin_home_dir']]
+        require => [Group['admin'], Group['www-data']]
+    }
+
+    # Create "admin" user home
+    file { "admin_home_dir":
+        ensure => 'directory',
+        path => "${admin_home}",
+        owner => 'admin',
+        group => 'admin',
+		require => User['admin']
     }
 
     ## Install bashrc and bash_aliases

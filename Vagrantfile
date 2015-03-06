@@ -10,7 +10,7 @@ Vagrant.configure("2") do |config|
     # Configure the machine settings
     config.vm.provider :virtualbox do |v|
         v.customize ["modifyvm", :id, "--memory", 2048]
-        v.customize ["modifyvm", :id, "--cpus", 1]
+        v.customize ["modifyvm", :id, "--cpus", 2]
     end
 
     config.vm.provision :puppet do |puppet|
